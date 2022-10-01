@@ -1,0 +1,34 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+}
+body .drag-container {
+  background-color: rgb(252, 199, 181);
+  padding: 15px;
+  height: 350px;
+}
+body .drop-container {
+  background-color: rgb(49, 142, 203);
+  padding: 15px;
+  height: 350px;
+  position: relative;
+}
+body .drop-container::before {
+  content: "ここにドロップしてください！";
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+body img {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  border: 1px dotted #fff;
+}
+body p {
+  background-color: rgb(94, 99, 144);
+  padding: 5px;
+  border: 1px dotted #fff;
+  border-radius: 5px;
+}/*# sourceMappingURL=style.css.map */

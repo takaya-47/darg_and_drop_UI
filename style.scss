@@ -1,0 +1,39 @@
+$color1: rgb(252, 199, 181);
+$color2: rgb(94, 99, 144);
+$color3: rgb(220, 159, 195);
+$color4: rgb(177, 214, 249);
+$color5: rgb(49, 142, 203);
+
+body {
+  margin: 0;
+  .drag-container {
+    background-color: $color1;
+    padding: 15px;
+    height: 350px;
+  }
+  .drop-container {
+    background-color: $color5;
+    padding: 15px;
+    height: 350px;
+    position: relative;
+  }
+  .drop-container::before {
+    content: "ここにドロップしてください！";
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+  img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    border: 1px dotted #fff;
+  }
+  p {
+    background-color: $color2;
+    padding: 5px;
+    border: 1px dotted #fff;
+    border-radius: 5px;
+  }
+}
