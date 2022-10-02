@@ -8,14 +8,30 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <div class="upload-area">
+    <h2 class="upload-area__title">画像アップロード</h2>
+    <div class="upload-area__form">
+      <p>端末の画像をドラッグ&ドロップ</p>
+      <input type="file" name="file" id="file">
+    </div>
+  </div>
+  <div class="preview-area">
+    <h2 class="preview-area__title">プレビュー</h2>
+    <div class="preview-area__preview">
+      <!-- ここのimgはJSで生成される予定。今はサンプル。 -->
+      <img src="" alt="" id="preview">
+    </div>
+  </div>
+  <h2>ドラッグ&ドロップUI</h2>
   <div class="drag-container">
     <!-- imgは初期値でdraggable=trueとなっている -->
     <img src="./img/panda.png" alt="" id="draggableImg">
-    <p draggable="true" id="draggableElement">ドラッグしてね！</p>
+    <p draggable="true" id="draggableElement">ドラッグできます</p>
   </div>
   <div class="drop-container">
     <!-- ここに要素がドロップされる -->
   </div>
   <script src="./main.js"></script>
+  <script src="./file.js"></script>
 </body>
 </html>
